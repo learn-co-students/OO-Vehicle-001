@@ -12,4 +12,21 @@
 
 //code goes here
 
+@property (nonatomic) CGFloat weight;
+@property (nonatomic) CGFloat topSpeed;
+@property (nonatomic) CGFloat currentSpeed;
+@property (nonatomic) CGFloat currentDirection;
+//(north => 0, east => 90,south => 180, west => 270)
+
+- (id) initWithWeight:(CGFloat)weight topSpeed:(CGFloat)topSpeed currentSpeed:(CGFloat)currentSpeed currentDirection:(CGFloat)currentDirection;
+
+-(void)increaseSpeed;
+
+-(void)brake;
+
+-(void)turnLeft;
+
+-(void)turnRight;
+
+
 @end

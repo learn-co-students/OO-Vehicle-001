@@ -10,6 +10,7 @@
 
 @interface FISRaceCar : FISVehicle
 
-//code goes here
+@property (nonatomic) NSArray *sponsors;
 
+-(id) init;
 @end
