@@ -10,6 +10,7 @@
 
 @interface FISRaceCar : FISVehicle
 
+@property (strong, nonatomic) NSArray *sponsors;
 //code goes here
 
 @end
