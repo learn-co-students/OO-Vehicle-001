@@ -10,6 +10,7 @@
 
 @interface FISCar : FISVehicle
 
+
 //code goes here
 
 @end
