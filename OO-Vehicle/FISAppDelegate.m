@@ -7,13 +7,25 @@
 //
 
 #import "FISAppDelegate.h"
+#import "FISVehicle.h"
+#import "FISCar.h"
+#import "FISPlane.h"
+#import "FISRaceCar.h"
 
 @implementation FISAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    FISVehicle *raceCar = [[FISRaceCar alloc] init];
+    raceCar.weight = 1270.0;
+    raceCar.topSpeed = 615.0;
+    
+    
+    
+    
+    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
+    //Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
