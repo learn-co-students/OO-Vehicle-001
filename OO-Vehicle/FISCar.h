@@ -10,6 +10,18 @@
 
 @interface FISCar : FISVehicle
 
-//code goes here
+
+- (void)increaseSpeed;
+- (void)brake;
+- (void)turnLeft;
+- (void)turnRight;
+
+
+- (instancetype)init;
+//- (instancetype)init:(CGFloat)weight topSpeed:(CGFloat)topSpeed currentSpeed:(CGFloat)currentSpeed currentDirection:(CGFloat)currentDirection;
+
+
+
+
 
 @end
