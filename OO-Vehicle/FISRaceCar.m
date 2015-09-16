@@ -11,5 +11,17 @@
 @implementation FISRaceCar
 
 //code goes here
+- (instancetype)init{
+    self = [self initWithWeight:1270
+                       topSpeed:615
+                   currentSpeed:0
+               currentDirection:0];
+    
+    if (self) {
+        _sponsors = @[@"KFC", @"Taco Bell", @"Pizza Hut"];
+    }
+    
+    return self;
+};
 
 @end
