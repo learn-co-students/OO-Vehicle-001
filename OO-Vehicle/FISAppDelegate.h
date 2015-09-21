@@ -7,6 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FISCar.h"
+#import "FISPlane.h"
+#import "FISRaceCar.h"
 
 @interface FISAppDelegate : UIResponder <UIApplicationDelegate>
 

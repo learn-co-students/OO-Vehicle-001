@@ -16,6 +16,28 @@
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    
+    FISCar *car = [FISCar init];
+    NSLog(@"Weight: %f, Top Speed: %f, Current Speed: %f, Current Direction: %f", car.weight, car.topSpeed, car.currentSpeed, car.currentDirection);
+    [car increaseSpeed];
+    [car turnLeft];
+    NSLog(@"Weight: %f, Top Speed: %f, Current Speed: %f, Current Direction: %f", car.weight, car.topSpeed, car.currentSpeed, car.currentDirection);
+    
+    
+    FISPlane *plane = [FISPlane init];
+    NSLog(@"Altitude: %f, Weight: %f, Top Speed: %f, Current Speed: %f, Current Direction: %f", plane.currentAltitude, plane.weight, plane.topSpeed, plane.currentSpeed, plane.currentDirection);
+    [plane increaseAltitude];
+    [plane increaseSpeed];
+    [plane turnRight];
+    NSLog(@"Altitude: %f, Weight: %f, Top Speed: %f, Current Speed: %f, Current Direction: %f", plane.currentAltitude, plane.weight, plane.topSpeed, plane.currentSpeed, plane.currentDirection);
+    
+    
+    FISRaceCar *raceCar = [FISRaceCar init];
+    NSLog(@"Weight: %f, Top Speed: %f, Current Speed: %f, Current Direction: %f, Sponsors: %@", raceCar.weight, raceCar.topSpeed, raceCar.currentSpeed, raceCar.currentDirection, raceCar.sponsors);
+    [raceCar increaseSpeed];
+    [raceCar turnRight];
+    NSLog(@"Weight: %f, Top Speed: %f, Current Speed: %f, Current Direction: %f, Sponsors: %@", raceCar.weight, raceCar.topSpeed, raceCar.currentSpeed, raceCar.currentDirection, raceCar.sponsors);
+    
     return YES;
 }
 
