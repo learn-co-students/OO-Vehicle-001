@@ -36,7 +36,7 @@ Let's make some classes to represent different vehicles. We'll start by making a
     - `brake` (changes the vehicle's `currentSpeed` to 0)
     - `turnLeft` (turns the vehicle -90 degrees, i.e. one quarter turn)
     - `turnRight` (turns the vehicle +90 degrees)
-    - give it a designated initializer, `initWithWeight:topSpeed:`. Set both `currentSpeed` and `currentDirection` to 0 by default.
+    - give it a designated initializer, `initWithWeight:topSpeed:`. Set both `weight` and `topSpeed` to 0 by default.
 
    **See what we're doing?** We're defining the basic functionality that *all vehicles share*. This saves us from having to re-define these properties/methods in each subclass, and gives us a great jumping off point for making more specialized vehicle objects.
   3. There are special vehicles called cars that move around in their own way (in case you haven't heard). Time to make the `FISCar` class.
