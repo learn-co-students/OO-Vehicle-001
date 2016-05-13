@@ -36,11 +36,19 @@
 }
 
 - (void)turnLeft {
-    self.currentDirection = self.currentDirection - 90;
+    if (self.currentDirection == 0) {
+        self.currentDirection = 270;
+    } else {
+         self.currentDirection = self.currentDirection - 90;
+    }
 }
 
 - (void)turnRight {
-    self.currentDirection = self.currentDirection + 90;
+    if (self.currentDirection == 270) {
+        self.currentDirection = 0;
+    } else {
+        self.currentDirection = self.currentDirection + 90;   
+    }
 }
 
 @end
